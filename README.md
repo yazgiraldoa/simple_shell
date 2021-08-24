@@ -5,13 +5,24 @@ In this project we were assigned to make a functional Shell, with its basic comm
 
 ## Table of contents
 ***
-1.  [General info](#general-info)
-2.  [How to install?](#how-to-install)
-3.  [Files of our Shell!](#files-of-our-shell)
-4.  [How does it work?](#how-does-it-work)
-5.  [Commands that works!](#commands-that-works)
-6.  [Test cases!](#test-cases)
-7.  [Authors!](#authors)
+- [Simple Shell](#simple-shell)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [How to install?](#how-to-install)
+    - [Plus: how to open it?](#plus-how-to-open-it)
+  - [Files of our Shell!](#files-of-our-shell)
+  - [How does it work?](#how-does-it-work)
+  - [Commands that works!](#commands-that-works)
+  - [Test cases!](#test-cases)
+    - [Interactive mode!](#interactive-mode)
+      - [ls](#ls)
+      - [pwd](#pwd)
+      - [cat](#cat)
+    - [Non-Interactive mode!](#non-interactive-mode)
+      - [ls](#ls-1)
+      - [pwd](#pwd-1)
+      - [cat](#cat-1)
+  - [Authors!](#authors)
 
 ***
 
@@ -68,7 +79,7 @@ it will compile the files and then you can execute the hsh program as follows :
 
 ## How does it work?
 ***
-![](https://github.com/yazgiraldoa/printf/blob/master/Flowchart.png)
+![](https://github.com/Crisgrva/Mini-shell/blob/main/Others/Simple%20Shell%20diagram.png)
 
 ***
 
