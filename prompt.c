@@ -1,30 +1,56 @@
 #include "main.h"
-#define OUT 0
-#define IN 1
 
 /**
- * count_words - function that counts words depending on delimiters
- * @str: string to be evaluated.
- * Return: number of words in the string.
+ * prompt_no_interactive - Function gets a string from command line.
+ * @name_file: name of the executable file.
+ * Return: char pointer that contains the string.
+ */
+char *prompt_no_interactive(char *name_file)
+{
+	char *line = NULL;
+	int input = 0;
+	size_t line_size = 0;
+
+	input = getline(&line, &line_size, stdin);
+
+	if (input == -1)
+	{
+		if (errno == EINVAL || errno == ENOMEM)
+		{
+			perror(name_file);
+		}
+		free(line);
+		return (NULL);
+	}
+	return (line);
+}
+
+/**
+ * prompt_interactive - Function prints a prompt and
+ * gets a string from command line.
+ * @name_file: name of the executable file.
+ * Return: char pointer that contains the string.
  */
 
-int count_words(char *str)
+char *prompt_interactive(char *name_file)
 {
-	int state = OUT;
-	unsigned int wc = 0;
+	char *prompt = "cuchufli% ", *line = NULL;
+	int input = 0;
+	size_t line_size = 0;
 
-	while (*str)
+	write(STDOUT_FILENO, prompt, _strlen(prompt));
+	input = getline(&line, &line_size, stdin);
+
+	if (input == -1)
 	{
-		if (*str == ' ' || *str == '\n' || *str == '\t'
-			|| *str == ':' || *str == '=')
-			state = OUT;
-
-		else if (state == OUT)
+		if (errno == EINVAL || errno == ENOMEM)
 		{
-			state = IN;
-			++wc;
+			perror(name_file);
 		}
-		++str;
+		write(1, "\n", 1);
+		free(line);
+		line_size = 0;
+		return (NULL);
 	}
-	return (wc);
+	return (line);
 }
