@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
 * get_builtin - Function that look for a builtin (env, exit, etc).

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * fork_process - function that creates a child process

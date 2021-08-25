@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SHELL_H
+#define SHELL_H
 
 /* STD LIBRARIES */
 #include <unistd.h>
@@ -75,4 +75,4 @@ static const built_in list[] = {
 	{NULL, NULL}};
 
 
-#endif
+#endif /* SHELL.H */

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * find_path - function that searches the PATH in user environment,

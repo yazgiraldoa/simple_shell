@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * path_error - prints error message for command not found in PATH.

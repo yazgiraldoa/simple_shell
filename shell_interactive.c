@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * shell_interactive - UNIX command line interpreter.

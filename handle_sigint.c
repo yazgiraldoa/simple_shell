@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * handle_sigint - function that handle signal Ctrl + C to not quit.

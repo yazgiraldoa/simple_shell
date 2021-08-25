@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * prompt_no_interactive - Function gets a string from command line.
