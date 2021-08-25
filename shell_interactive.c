@@ -25,7 +25,7 @@ int shell_interactive(void)
 		{	free(tokens);
 			free(line);
 			if (funct() == 1)
-				return (0);
+				exit(0);
 			continue; }
 		if (access(tokens[0], F_OK) != 0)
 		{	path = find_path(tokens);
