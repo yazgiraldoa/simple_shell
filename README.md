@@ -11,7 +11,8 @@ In this project we were assigned to make a functional Shell, with its basic comm
 4.  [How does it work?](#how-does-it-work)
 5.  [Commands that works!](#commands-that-works)
 6.  [Test cases!](#test-cases)
-7.  [Authors!](#authors)
+7.  [Get to know how our shell works from the inside!](#get-to-know-how-our-shell-works-from-the-inside)
+8.  [Authors!](#authors)
 
 ***
 
@@ -195,6 +196,11 @@ indicate that events have passed a point of no return.
 
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 ```
+***
+
+## Get to know how our shell works from the inside!
+
+We invite you to read our Blog about [*what happens inside our shell when we run ls -l *.c*](https://medium.com/@3517/simple-shell-what-happens-when-you-type-ls-l-c-e91e880f5033)
 
 ***
 
